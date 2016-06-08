@@ -1,3 +1,40 @@
+Variables used in the script:
+
+The source data read into tables
+X_test_table  = "test/X_test.txt"
+y_test_table = "test/y_test.txt"
+X_train_table = train/X_train.txt
+y_train_table = train/y_train.txt
+test_subjects = test/subject_test.txt
+train_subjects = train/subject_train.txt
+features = features.txt
+activitylabels  = activity_labels.txt
+
+extra column names:
+train_subjects: subjects
+test_subjects: subjects
+y_train_table: activitycode
+y_test_table: activitycode
+X_train_table: numbered 1-83
+X_test_table: numbereed 1-83
+activitylabels: activitycode, activity_desc
+
+
+combined tables:
+xy_train_table  merge of train_subjects, y_train_table and X_train_table
+xy_test_table merge of test_subjects,y_test_table and X_test_table
+combined train and test:
+XY_complete merge of xy_test_table and xy_train_table
+
+subsetting variables:
+grep_pattern: std|mean to find the std and mean variables
+std_mean_rows: rows in teh features table with the mean and std variables
+std_mean_code_vector: vector to use subset XY_complete
+std_mean_table: subset of XY_complete of all the variables with std and mean
+
+
+
+
 Steps taken to clean the data
 
 
