@@ -32,14 +32,15 @@ std_mean_rows: rows in teh features table with the mean and std variables
 std_mean_code_vector: vector to use subset XY_complete
 std_mean_table: subset of XY_complete of all the variables with std and mean
 
+Result variables:
+std_mean_table: result from step 4
+Mean_table: resutl from step 5 with only means of all the variables from step 4 grouped by subject and activity and ordered by subject
+
+result files:
+Week4Step4.txt
+SamsungGalaxyAccelerometer.txt
 
 
 
-Steps taken to clean the data
 
 
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names.
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
