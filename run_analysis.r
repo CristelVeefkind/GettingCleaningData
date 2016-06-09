@@ -56,7 +56,9 @@ Mean_table <- arrange(Mean_table, subjects)
 remove(X_test_table,X_train_table,y_test_table,y_train_table,xy_test_table,xy_train_table
        ,XY_complete,test_subjects, train_subjects, std_mean_rows,activitylabels, features)
 
-
+#write table step 4 and 5
+write.table(std_mean_table,file = "Week4Step4.txt", row.names = FALSE)
+write.table(Mean_table,file = "SamsungGalaxyAccelerometer.txt", row.names = FALSE)
 
 
 
